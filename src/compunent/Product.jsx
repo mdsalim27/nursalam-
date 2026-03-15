@@ -23,6 +23,10 @@ import cupp5 from "../assets/cup/cup5.jpeg"
 import cupp6 from "../assets/cup/cup6.jpeg"
 import cupp7 from "../assets/cup/cup7.jpeg"
 // cup product/// end/////////////////////
+// abeyecover 
+import abeyacover from "../assets/abeyacover.jpeg"
+import abeyacover1 from "../assets/abeyacover1.jpeg"
+import abeyacover2 from "../assets/abeyacover2.jpeg"
 // abeya boox start
 import abeya from "../assets/box/abeya.jpeg"
 import abeya1 from "../assets/box/abeya1.jpeg"
@@ -76,7 +80,25 @@ const labelproduct = [
   },
 ]
 const products = [
-  // Premium Custom Bag Printing  start
+  // abeya box cover 
+  {
+    img: abeyacover,
+    title: "Abaya Box Printing",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
+  {
+    img: abeyacover1,
+    title: "Abaya Box Printing",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
+  {
+    img: abeyacover2,
+    title: "Abaya Box Printing",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
   {
     img: abeya,
     title: "Abaya Box Printing",
@@ -113,22 +135,23 @@ const products = [
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
+  // Premium Custom Bag Printing  start
   {
     img: product,
-    title: "Matt Lamination 350gsm",
+    title: "Custom Box for dresss ",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
   },
   {
     img: product1,
-    title: "Bag with tray custom size ",
+    title: "Custom bag,box.... ",
     gsmColor: "text-red-600",
     qty: ["500 pcs"],
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: product2,
-    title: "Custom bag,box ..",
+    title: "Bag for foods....",
     gsmColor: "text-red-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
@@ -186,7 +209,7 @@ const cupproduct = [
   },
   {
     img: cupp3,
-    title: "Cup Customise",
+    title: "Custom Cup cake box",
     gsmColor: "text-blue-600",
     qty: ["1000 pcs |", "5000 pcs |", "5000 pcs"],
   },
@@ -250,43 +273,43 @@ const boxproduct = [
   },
   {
     img: box5,
-    title: "Food Box, Lamination",
+    title: "Custom Cake box",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: box6,
-    title: "Food Box, Lamination",
+    title: "Custom Cake box",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: box7,
-    title: "Food Box, Lamination",
+    title: "Custom box..",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: box8,
-    title: "Food Box, Lamination",
+    title: "Custom bag,box for food",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: box9,
-    title: "Food Box, Lamination",
+    title: "Custom cake box...",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: box10,
-    title: "Food Box, Lamination",
+    title: "Custom bag with tray.....",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: box11,
-    title: "Food Box, Lamination",
+    title: "Custom Food box",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
   },
@@ -366,7 +389,7 @@ const Product = ({ item }) => {
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.3 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.1 }} // stagger animation
             >
               <div
                 key={index}
@@ -394,26 +417,26 @@ const Product = ({ item }) => {
                     {item.qty.map((q, i) => (
                       <span key={i}>{q}</span>
                     ))}
+                    {/* button start */}
+                    <div className=" text-center flex justify-start">
+                      <button
+                        onClick={handleOrder}
+                        className="flex justify-center items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                      >
+                        <FaWhatsapp className="text-lg" />
+                        Order Now
+                      </button>
+                    </div>
+                    {/* button end */}
 
 
                   </div>
                 </div>
               </div>
-              
+
             </motion.div>
 
           ))}
-          {/* button start */}
-          <div className=" text-center flex justify-start">
-          <button
-            onClick={handleOrder}
-            className="flex justify-center items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
-          >
-            <FaWhatsapp className="text-lg" />
-            Order Now
-          </button>
-          </div>
-          {/* button end */}
         </div>
       </Container>
       {/* Premium Gold Modal */}
@@ -482,11 +505,11 @@ const Product = ({ item }) => {
             {/* Description */}
             <p
               className="gold-hover text-base sm:text-lg md:text-xl
-      text-gray-300 font-medium leading-relaxed
-      max-w-3xl mx-auto space-y-2
-      transition-all duration-1000 ease-in-out
-      group-hover:text-gray-100
-      group-hover:-translate-y-1"
+                      not-only-of-type: text-gray-300 font-medium leading-relaxed
+                      not-only-of-type: max-w-3xl mx-auto space-y-2
+                      not-only-of-type: transition-all duration-1000 ease-in-out
+                      not-only-of-type: group-hover:text-gray-100
+                      not-only-of-type: group-hover:-translate-y-1"
             >
               We provide premium custom packaging solutions including:
               <br />
@@ -505,52 +528,52 @@ const Product = ({ item }) => {
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
           {products.map((item, index) => (
-   <motion.div
+            <motion.div
               key={product.id}
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.3 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.1 }} // stagger animation
             >
 
-            <div
-              key={index}
-              className="bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition duration-500 overflow-hidden group w-full">
-              {/* Image Section */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  onClick={() => handleImageClick(item.img)}
-                  className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
+              <div
+                key={index}
+                className="bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition duration-500 overflow-hidden group w-full">
+                {/* Image Section */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    onClick={() => handleImageClick(item.img)}
+                    className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
              transition-transform duration-700 
              group-hover:scale-110 cursor-pointer"
-                />
-                <div className="absolute bottom-0 w-full bg-black/60 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 text-center">
-                  {item.title}
+                  />
+                  <div className="absolute bottom-0 w-full bg-black/60 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 text-center">
+                    {item.title}
+                  </div>
+                </div>
+                {/* Bottom Section */}
+                <div className="p-4 md:p-5">
+                  <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
+                    Available Circulations:
+                  </h4>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
+                    {item.qty.map((q, i) => (
+                      <span key={i}>{q}</span>
+                    ))}
+                    {/* button start */}
+                    <button
+                      onClick={handleOrder}
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                    >
+                      <FaWhatsapp className="text-lg" />
+                      Order Now
+                    </button>
+                    {/* button end */}
+                  </div>
                 </div>
               </div>
-              {/* Bottom Section */}
-              <div className="p-4 md:p-5">
-                <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
-                  Available Circulations:
-                </h4>
-                <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
-                  {item.qty.map((q, i) => (
-                    <span key={i}>{q}</span>
-                  ))}
-                  {/* button start */}
-                  <button
-                    onClick={handleOrder}
-                    className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
-                  >
-                    <FaWhatsapp className="text-lg" />
-                    Order Now
-                  </button>
-                  {/* button end */}
-                </div>
-              </div>
-            </div>
             </motion.div>
           ))}
         </div>
@@ -610,58 +633,58 @@ const Product = ({ item }) => {
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
           {boxproduct.map((item, index) => (
-               <motion.div
+            <motion.div
               key={product.id}
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.3 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.1 }} // stagger animation
             >
 
-            <div
-              key={index}
-              className="bg-gray-100 rounded-2xl shadow-md 
+              <div
+                key={index}
+                className="bg-gray-100 rounded-2xl shadow-md 
                    hover:shadow-xl 
                    transition duration-500 
                    overflow-hidden group w-full">
-              {/* Image Section */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  onClick={() => handleImageClick(item.img)}
-                  className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
+                {/* Image Section */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    onClick={() => handleImageClick(item.img)}
+                    className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
              transition-transform duration-700 
              group-hover:scale-110 cursor-pointer"
-                />
-                <div className="absolute bottom-0 w-full 
+                  />
+                  <div className="absolute bottom-0 w-full 
                           bg-black/60 text-white 
                           text-sm sm:text-base md:text-lg 
                           font-semibold px-4 py-2 text-center">
-                  {item.title}
+                    {item.title}
+                  </div>
+                </div>
+                {/* Bottom Section */}
+                <div className="p-4 md:p-5">
+                  <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
+                    Available Circulations:
+                  </h4>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
+                    {item.qty.map((q, i) => (
+                      <span key={i}>{q}</span>
+                    ))}
+                    {/* button start */}
+                    <button
+                      onClick={handleOrder}
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                    >
+                      <FaWhatsapp className="text-lg" />
+                      Order Now
+                    </button>
+                    {/* button end */}
+                  </div>
                 </div>
               </div>
-              {/* Bottom Section */}
-              <div className="p-4 md:p-5">
-                <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
-                  Available Circulations:
-                </h4>
-                <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
-                  {item.qty.map((q, i) => (
-                    <span key={i}>{q}</span>
-                  ))}
-                  {/* button start */}
-                  <button
-                    onClick={handleOrder}
-                    className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
-                  >
-                    <FaWhatsapp className="text-lg" />
-                    Order Now
-                  </button>
-                  {/* button end */}
-                </div>
-              </div>
-            </div>
             </motion.div>
           ))}
         </div>
@@ -718,58 +741,58 @@ const Product = ({ item }) => {
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
           {labelproduct.map((item, index) => (
-               <motion.div
+            <motion.div
               key={product.id}
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.3 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.1}} // stagger animation
             >
 
-            <div
-              key={index}
-              className="bg-gray-100 rounded-2xl shadow-md 
+              <div
+                key={index}
+                className="bg-gray-100 rounded-2xl shadow-md 
                    hover:shadow-xl 
                    transition duration-500 
                    overflow-hidden group w-full">
-              {/* Image Section */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={item.img}
-                  alt={item.title}
-                  onClick={() => handleImageClick(item.img)}
-                  className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
+                {/* Image Section */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    onClick={() => handleImageClick(item.img)}
+                    className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
                      transition-transform duration-700 
                        group-hover:scale-110 cursor-pointer"
-                />
-                <div className="absolute bottom-0 w-full 
+                  />
+                  <div className="absolute bottom-0 w-full 
                           bg-black/60 text-white 
                           text-sm sm:text-base md:text-lg 
                           font-semibold px-4 py-2 text-center">
-                  {item.title}
+                    {item.title}
+                  </div>
+                </div>
+                {/* Bottom Section */}
+                <div className="p-4 md:p-5">
+                  <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
+                    Available Circulations:
+                  </h4>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
+                    {item.qty.map((q, i) => (
+                      <span key={i}>{q}</span>
+                    ))}
+                    {/* button start */}
+                    <button
+                      onClick={handleOrder}
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                    >
+                      <FaWhatsapp className="text-lg" />
+                      Order Now
+                    </button>
+                    {/* button end */}
+                  </div>
                 </div>
               </div>
-              {/* Bottom Section */}
-              <div className="p-4 md:p-5">
-                <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
-                  Available Circulations:
-                </h4>
-                <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
-                  {item.qty.map((q, i) => (
-                    <span key={i}>{q}</span>
-                  ))}
-                  {/* button start */}
-                  <button
-                    onClick={handleOrder}
-                    className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
-                  >
-                    <FaWhatsapp className="text-lg" />
-                    Order Now
-                  </button>
-                  {/* button end */}
-                </div>
-              </div>
-            </div>
             </motion.div>
           ))}
         </div>
