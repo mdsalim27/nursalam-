@@ -76,7 +76,7 @@ const Contact = () => {
                     {/* Contact Form */}
 
                     <section className="py-1 bg-gray-100">
-                        <div className="max-w-6xl mx-auto px-4">
+                        {/* <div className="max-w-6xl mx-auto px-4">
                             <h2 className="text-3xl font-bold mb-6 text-center">
                                 Our Location
                             </h2>
@@ -88,7 +88,22 @@ const Contact = () => {
                                     loading="lazy"
                                 ></iframe>
                             </div>
-                        </div>
+                        </div> */}
+                          <div className="max-w-6xl mx-auto px-4">
+              <h2 className="text-3xl font-bold mb-6 text-center">
+                Location
+              </h2>
+
+              <div className="w-full h-[250px] rounded-lg overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps?q=25.3002167,55.4300308&output=embed"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
                     </section>
 
                 </div>

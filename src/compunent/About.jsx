@@ -4,6 +4,7 @@ import printingm1 from "../assets/about/printingm.png"
 import cup from "../assets/about/cup1.png"
 import bag from "../assets/about/bag1.png"
 import label from "../assets/about/labelo.png"
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -14,16 +15,21 @@ const About = () => {
             ABOUT US
           </h2>
         </div>
-        <div className="grid lg:grid-cols-1 gap-12 items-center">
-          {/* LEFT IMAGES */}
-          <div className="relative group w-full" data-aos="fade-right">
-            <img
+        <div className="grid lg:grid-cols-1  items-center">
+
+          <div className="flex justify-center items-center h-screen bg-gray-100">
+            <motion.img
               src={printingm}
-              alt=""
-              className="w-full cursor-pointer rounded-lg shadow-xl transform transition duration-500 ease-in-out 
-                 group-hover:scale-102 group-hover:shadow-2xl"
+              alt="Slide In"
+              className="w-full h-full object-cover rounded-xl"
+              initial={{ opacity: 0, x: -100 }}      // start left
+              whileInView={{ opacity: 1, x: 0 }}     // animate to position
+              viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              whileHover={{ scale: 1.05 }}           // optional hover effect
             />
           </div>
+
         </div>
         <div className="space-y-16 py-12">
           {/* Paper Bag */}
@@ -38,23 +44,31 @@ const About = () => {
                 </p>
               </ul>
             </div>
-            <div>
-              <img
-                src={printingm1}
-                alt="Paper Bag"
-                className="w-full cursor-pointer rounded-lg shadow-xl transform transition duration-500 ease-in-out 
-                 group-hover:scale-105 group-hover:rotate-1 group-hover:shadow-2xl"         />
-            </div>
+
+            <motion.img
+              src={printingm1}
+              alt="Slide In"
+              className="w-full h-full object-cover rounded-xl"
+              initial={{ opacity: 0, x: 100 }}        // start off-screen right
+              whileInView={{ opacity: 1, x: 0 }}     // slide to position
+              viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              whileHover={{ scale: 1.05 }}           // optional hover effect
+            />
           </div>
           {/* Perfume Box */}
           <div className="grid md:grid-cols-2 gap-10 items-center relative group" data-aos="fade-right">
-            <div className="order-last md:order-first">
-              <img
-                src={bag}
-                alt="Perfume Box"
-                className="w-full cursor-pointer rounded-lg shadow-xl transform transition duration-500 ease-in-out 
-                 group-hover:scale-105 group-hover:rotate-1 group-hover:shadow-2xl"              />
-            </div>
+
+            <motion.img
+              src={bag}
+              alt="Slide In"
+              className="w-full h-full object-cover rounded-xl"
+              initial={{ opacity: 0, x: -100 }}        // start off-screen right
+              whileInView={{ opacity: 1, x: 0 }}     // slide to position
+              viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              whileHover={{ scale: 1.05 }}           // optional hover effect
+            />
             <div>
               <h3 className="text-2xl font-bold mb-4">Floral Gift Bags</h3>
               <p className="text-gray-600 leading-relaxed mb-2">
@@ -73,22 +87,34 @@ const About = () => {
               <p>Enhance your brand identity with our high-quality, durable clothing labels. Perfect for apparel, accessories, and handmade items, these labels are designed to withstand washing while keeping your brand looking sharp. Customize with your logo, text, or care instructions to make every garment uniquely yours.</p>
             </div>
             <div>
-              <img
-                src={label} // replace with your cup image
-                alt="Cup Printing"
-                className="w-full cursor-pointer rounded-lg shadow-xl transform transition duration-500 ease-in-out 
-                 group-hover:scale-105  group-hover:shadow-2xl"              />
+              <motion.img
+                src={label}
+                alt="Slide In"
+                className="w-full h-full object-cover rounded-xl"
+                initial={{ opacity: 0, x: 100 }}        // start off-screen right
+                whileInView={{ opacity: 1, x: 0 }}     // slide to position
+                viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                whileHover={{ scale: 1.05 }}           // optional hover effect
+              />
             </div>
+
           </div>
 
           {/* label end */}
           <div className="grid md:grid-cols-2 gap-10 items-center relative group" data-aos="fade-right">
+
             <div>
-              <img
-                src={cup} // replace with your cup image
-                alt="Cup Printing"
-                className="w-full cursor-pointer rounded-lg shadow-xl transform transition duration-500 ease-in-out 
-                 group-hover:scale-105  group-hover:shadow-2xl"              />
+              <motion.img
+                src={cup}
+                alt="Slide In"
+                className="w-full h-full object-cover rounded-xl"
+                initial={{ opacity: 0, x: -100 }}        // start off-screen right
+                whileInView={{ opacity: 1, x: 0 }}     // slide to position
+                viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                whileHover={{ scale: 1.05 }}           // optional hover effect
+              />
             </div>
             <div>
               <h3 className="text-2xl font-bold mb-4">Cup Printing</h3>
@@ -114,7 +140,7 @@ const About = () => {
           >
             <p className="text-orange-400 text-sm uppercase mb-3">
               🌟 Our Values
-           </p>
+            </p>
             <h3 className="text-2xl font-bold mb-4 leading-snug">
               We believe packaging is more than just a box — it is a powerful statement of quality and brand identity.
             </h3>

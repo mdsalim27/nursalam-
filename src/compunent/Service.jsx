@@ -3,6 +3,7 @@ import product1 from "../assets/product1.png";
 import Perfume from "../assets/Perfume.jpeg";
 import cupp2 from "../assets/cup/cup2.jpeg"
 import label from "../assets/about/labelo.png"
+import { motion } from "framer-motion";
 
 const Service = () => {
     return (
@@ -19,12 +20,19 @@ const Service = () => {
                         <div className="absolute -top-6 -left-6 w-25 h-25 bg-gray-300 hidden sm:flex items-center justify-center text-center">
                             <p className="text-blue-800 font-bold italic">Welcome</p>
                         </div>
-                        <img
-                            src={product1}
-                            alt="Printing Machine"
-                            className="w-full cursor-pointer rounded-lg shadow-xl transform transition duration-500 ease-in-out 
-                            group-hover:scale-105 group-hover:rotate-1 group-hover:shadow-2xl"
-                        />
+
+                        <div>
+                            <motion.img
+                                src={product1}
+                                alt="Slide In"
+                                className="w-full h-full object-cover rounded-xl"
+                                initial={{ opacity: 0, x: -100 }}        // start off-screen right
+                                whileInView={{ opacity: 1, x: 0 }}     // slide to position
+                                viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                whileHover={{ scale: 1.05 }}           // optional hover effect
+                            />
+                        </div>
                     </div>
                     {/* RIGHT CONTENT */}
                     <div data-aos="fade-left">
@@ -53,22 +61,34 @@ const Service = () => {
                             </p>
                             <p>Enhance your brand identity with our high-quality, durable clothing labels. Perfect for apparel, accessories, and handmade items, these labels are designed to withstand washing while keeping your brand looking sharp. Customize with your logo, text, or care instructions to make every garment uniquely yours.</p>
                         </div>
-                        
+
+
                         <div>
-                            <img
+                            <motion.img
                                 src={label}
-                                alt="Paper Bag"
-                                className="w-full cursor-pointer rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+                                alt="Slide In"
+                                className="w-full h-full object-cover rounded-xl"
+                                initial={{ opacity: 0, x: 100 }}        // start off-screen right
+                                whileInView={{ opacity: 1, x: 0 }}     // slide to position
+                                viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                whileHover={{ scale: 1.05 }}           // optional hover effect
                             />
                         </div>
                     </div>
                     {/* Perfume Box */}
                     <div className="grid md:grid-cols-2 gap-10 items-center">
-                        <div className="order-last md:order-first">
-                            <img
+
+                        <div>
+                            <motion.img
                                 src={Perfume}
-                                alt="Perfume Box"
-                                className="w-full cursor-pointer rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+                                alt="Slide In"
+                                className="w-full h-full object-cover rounded-xl"
+                                initial={{ opacity: 0, x: -100 }}        // start off-screen right
+                                whileInView={{ opacity: 1, x: 0 }}     // slide to position
+                                viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                whileHover={{ scale: 1.05 }}           // optional hover effect
                             />
                         </div>
                         <div>
@@ -99,11 +119,17 @@ const Service = () => {
                                 <li>Eco-friendly options available</li>
                             </ul>
                         </div>
+
                         <div>
-                            <img
-                                src={cupp2} // replace with your cup image
-                                alt="Cup Printing"
-                                className="w-full cursor-pointer rounded-xl shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+                            <motion.img
+                                src={cupp2}
+                                alt="Slide In"
+                                className="w-full h-full object-cover rounded-xl"
+                                initial={{ opacity: 0, x: 100 }}        // start off-screen right
+                                whileInView={{ opacity: 1, x: 0 }}     // slide to position
+                                viewport={{ once: true, amount: 0.5 }} // trigger when 50% visible
+                                transition={{ duration: 0.8, ease: "easeOut" }}
+                                whileHover={{ scale: 1.05 }}           // optional hover effect
                             />
                         </div>
                     </div>

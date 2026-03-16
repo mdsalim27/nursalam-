@@ -193,7 +193,7 @@ const cupproduct = [
     img: product1,
     title: "Bag with tray custom size",
     gsmColor: "text-blue-600",
-    qty: ["1000 pcs |", "5000 pcs |", "5000 pcs"],
+    qty: ["200 pcs |", "500 pcs |", "5000 pcs"],
   },
   {
     img: cupp1,
@@ -389,7 +389,7 @@ const Product = ({ item }) => {
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: index * 0.1 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
             >
               <div
                 key={index}
@@ -533,7 +533,7 @@ const Product = ({ item }) => {
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: index * 0.1 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
             >
 
               <div
@@ -599,7 +599,6 @@ const Product = ({ item }) => {
             >
               Premium Custom Drawer Packaging Box Printing
             </h2>
-
             {/* Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
               <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
@@ -638,9 +637,8 @@ const Product = ({ item }) => {
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: index * 0.1 }} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
             >
-
               <div
                 key={index}
                 className="bg-gray-100 rounded-2xl shadow-md 
@@ -692,7 +690,6 @@ const Product = ({ item }) => {
       {/* // Rigid Drawer Packaging Box end///////////////// */}
       {/* // label start ///////////////// */}
       <Container>
-
         <div className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
           {/* Gold Glow Background Effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
@@ -709,14 +706,12 @@ const Product = ({ item }) => {
             >
               Label Printing
             </h2>
-
             {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-700 group-hover:scale-110">
               <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
               <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
               <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
             </div>
-
             {/* Description */}
             <p
               className=" gold-hover text-base sm:text-lg md:text-xl 
@@ -746,9 +741,8 @@ const Product = ({ item }) => {
               initial={{ opacity: 0, x: -100 }}   // start from left side
               whileInView={{ opacity: 1, x: 0 }} // animate to position
               viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: index * 0.1}} // stagger animation
+              transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
             >
-
               <div
                 key={index}
                 className="bg-gray-100 rounded-2xl shadow-md 
