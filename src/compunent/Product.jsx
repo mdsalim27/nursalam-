@@ -330,11 +330,10 @@ const Product = ({ item }) => {
   return (
     <section className="bg-gray-50 -mt-[80px] lg:mt-0 lg:pt-30">
       {/* // /////////////////// Premium Custom cup Printing start /////////////////////////////// */}
-      <Container>
-        <div className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+      <Container >
+        <div id="cupproduct" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
           {/* Gold Glow Background Effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
-
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
             {/* Heading */}
@@ -475,7 +474,7 @@ const Product = ({ item }) => {
       {/* // /////////////////// Premium Custom cup Printing end /////////////////////////////// */}
       {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
       <Container>
-        <div className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
           {/* Gold Glow Background Effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
 
@@ -535,7 +534,6 @@ const Product = ({ item }) => {
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
             >
-
               <div
                 key={index}
                 className="bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition duration-500 overflow-hidden group w-full">
@@ -581,7 +579,7 @@ const Product = ({ item }) => {
       {/* // /////////////////// Premium Custom Bag Printing end /////////////////////////////// */}
       {/* // Rigid Drawer Packaging Box start///////////////// */}
       <Container>
-        <div className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="Chocolatebox" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
           {/* Gold Glow Background Effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
 
@@ -690,7 +688,7 @@ const Product = ({ item }) => {
       {/* // Rigid Drawer Packaging Box end///////////////// */}
       {/* // label start ///////////////// */}
       <Container>
-        <div className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="LabelPrinting" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
           {/* Gold Glow Background Effect */}
           <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
 

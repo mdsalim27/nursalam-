@@ -6,6 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import logo from "../assets/logoFooter.png"
 import Container from "./Container";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const socialLinks = [
@@ -47,14 +48,40 @@ const Footer = () => {
                 Quick Link
                 <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
               </h3>
-
               <ul className="space-y-4 text-gray-700 mt-6">
-                {["Home", "About Us", "Services", "Portfolio", "Contact Us"].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    {item}
-                  </li>
-                ))}
+                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <Link to={"/"}>
+                    Home
+                  </Link>
+
+                </li>
+                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <Link to={"/about"}>
+                    About Us
+                  </Link>
+                </li>
+                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <Link to={"/Product"}>
+
+                    Products
+                  </Link>
+                </li>
+                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <Link to={"/service"}>
+                    Services
+                  </Link>
+                </li>
+                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <Link to={"/contact"}>
+                    Contact Us
+                  </Link>
+                </li>
+
               </ul>
             </div>
 
@@ -66,18 +93,28 @@ const Footer = () => {
               </h3>
 
               <ul className="space-y-4 text-gray-700 mt-6">
-                {[
-                  "Cup cake  box",
-                  "Abaya cover",
-                  "Chocolate box",
-                  "Paper bag",
-                  "Perfume box",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                 
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                     <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    {item}
+                    <a href="#cupproduct">Cup cake  box</a>
                   </li>
-                ))}
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Abayacover">Abaya Cover</a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Chocolatebox">Packaging Box </a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#LabelPrinting">Label Printing</a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Chocolatebox">Perfume box</a>
+                  </li>
+              
               </ul>
             </div>
             {/* Contact */}
