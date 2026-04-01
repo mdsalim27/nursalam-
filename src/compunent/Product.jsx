@@ -83,19 +83,19 @@ const products = [
   // abeya box cover 
   {
     img: abeyacover,
-    title: "Abaya Box Printing",
+    title: "Abaya Cover",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: abeyacover1,
-    title: "Abaya Box Printing",
+    title: "Abaya Cover",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
     img: abeyacover2,
-    title: "Abaya Box Printing",
+    title: "Abaya Cover",
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
@@ -329,6 +329,112 @@ const Product = ({ item }) => {
   // ///////////////////////////////////////
   return (
     <section className="bg-gray-50 -mt-[80px] lg:mt-0 lg:pt-30">
+      {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
+      <Container>
+        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+          {/* Gold Glow Background Effect */}
+          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
+
+          <div className="relative max-w-5xl mx-auto px-6 text-center">
+
+            {/* Heading */}
+            <h2
+              className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
+      bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
+      bg-clip-text text-transparent tracking-wider
+      drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
+      mb-1 leading-tight
+      transition-all duration-1000 ease-in-out
+      group-hover:scale-105
+      group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+            >
+              Premium Custom Bag & Box Printing
+              </h2>
+
+            {/* Luxury Divider */}
+            <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+              <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+            </div>
+
+            {/* Description */}
+            <p
+              className="gold-hover text-base sm:text-lg md:text-xl
+                      not-only-of-type: text-gray-300 font-medium leading-relaxed
+                      not-only-of-type: max-w-3xl mx-auto space-y-2
+                      not-only-of-type: transition-all duration-1000 ease-in-out
+                      not-only-of-type: group-hover:text-gray-100
+                      not-only-of-type: group-hover:-translate-y-1"
+            >
+              We provide premium custom packaging solutions including:
+              <br />
+              ✦ Shopping Bags & Boxes
+              ✦ Abaya Boxes
+              ✦ Sweet & Cake Boxes <br />
+              ✦ Perfume Bags & Boxes
+              ✦ Flower Bags
+              ✦ Clothing Labels
+              ✦ Abaya Covers <br />
+              ✦ Wrapping Paper
+              ✦ Stickers, Cards, Tags, Envelopes & more.
+            </p>
+          </div>
+        </div>
+        {/* ✅ Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
+          {products.map((item, index) => (
+            <motion.div
+              key={product.id}
+              initial={{ opacity: 0, x: -100 }}   // start from left side
+              whileInView={{ opacity: 1, x: 0 }} // animate to position
+              viewport={{ once: true }}
+              transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
+            >
+              <div
+                key={index}
+                className="bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition duration-500 overflow-hidden group w-full">
+                {/* Image Section */}
+                <div className="relative overflow-hidden">
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    onClick={() => handleImageClick(item.img)}
+                    className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
+             transition-transform duration-700 
+             group-hover:scale-110 cursor-pointer"
+                  />
+                  <div className="absolute bottom-0 w-full bg-black/60 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 text-center">
+                    {item.title}
+                  </div>
+                </div>
+                {/* Bottom Section */}
+                <div className="p-4 md:p-5">
+                  <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
+                    Available Circulations:
+                  </h4>
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
+                    {item.qty.map((q, i) => (
+                      <span key={i}>{q}</span>
+                    ))}
+                    {/* button start */}
+                    <button
+                      onClick={handleOrder}
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                    >
+                      <FaWhatsapp className="text-lg" />
+                      Order Now
+                    </button>
+                    {/* button end */}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </Container>
+      {/* // /////////////////// Premium Custom Bag Printing end /////////////////////////////// */}
+
       {/* // /////////////////// Premium Custom cup Printing start /////////////////////////////// */}
       <Container >
         <div id="cupproduct" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
@@ -439,6 +545,8 @@ const Product = ({ item }) => {
         </div>
       </Container>
       {/* Premium Gold Modal */}
+
+
       {selectedImage && (
         <div
           onClick={closeModal}
@@ -472,111 +580,10 @@ const Product = ({ item }) => {
         </div>
       )}
       {/* // /////////////////// Premium Custom cup Printing end /////////////////////////////// */}
-      {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
-      <Container>
-        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
-          {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
 
-          <div className="relative max-w-5xl mx-auto px-6 text-center">
 
-            {/* Heading */}
-            <h2
-              className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-      bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
-      bg-clip-text text-transparent tracking-wider
-      drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-      mb-1 leading-tight
-      transition-all duration-1000 ease-in-out
-      group-hover:scale-105
-      group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
-            >
-              Premium Custom Abaya / Bag Printing
-            </h2>
 
-            {/* Luxury Divider */}
-            <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
-              <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
-            </div>
 
-            {/* Description */}
-            <p
-              className="gold-hover text-base sm:text-lg md:text-xl
-                      not-only-of-type: text-gray-300 font-medium leading-relaxed
-                      not-only-of-type: max-w-3xl mx-auto space-y-2
-                      not-only-of-type: transition-all duration-1000 ease-in-out
-                      not-only-of-type: group-hover:text-gray-100
-                      not-only-of-type: group-hover:-translate-y-1"
-            >
-              We provide premium custom packaging solutions including:
-              <br />
-              ✦ Shopping Bags & Boxes
-              ✦ Abaya Boxes
-              ✦ Sweet & Cake Boxes <br />
-              ✦ Perfume Bags & Boxes
-              ✦ Flower Bags
-              ✦ Clothing Labels
-              ✦ Abaya Covers <br />
-              ✦ Wrapping Paper
-              ✦ Stickers, Cards, Tags, Envelopes & more.
-            </p>
-          </div>
-        </div>
-        {/* ✅ Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
-          {products.map((item, index) => (
-            <motion.div
-              key={product.id}
-              initial={{ opacity: 0, x: -100 }}   // start from left side
-              whileInView={{ opacity: 1, x: 0 }} // animate to position
-              viewport={{ once: true }}
-              transition={{ duration: 0.9, delay: index * 0.15 }} // stagger animation
-            >
-              <div
-                key={index}
-                className="bg-gray-100 rounded-2xl shadow-md hover:shadow-xl transition duration-500 overflow-hidden group w-full">
-                {/* Image Section */}
-                <div className="relative overflow-hidden">
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    onClick={() => handleImageClick(item.img)}
-                    className="w-full h-48 sm:h-52 md:h-[220px] object-cover 
-             transition-transform duration-700 
-             group-hover:scale-110 cursor-pointer"
-                  />
-                  <div className="absolute bottom-0 w-full bg-black/60 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 text-center">
-                    {item.title}
-                  </div>
-                </div>
-                {/* Bottom Section */}
-                <div className="p-4 md:p-5">
-                  <h4 className="text-gray-700 font-medium mb-3 text-sm md:text-base">
-                    Available Circulations:
-                  </h4>
-                  <div className="flex flex-wrap items-center justify-between gap-2 text-gray-600 text-sm md:text-lg">
-                    {item.qty.map((q, i) => (
-                      <span key={i}>{q}</span>
-                    ))}
-                    {/* button start */}
-                    <button
-                      onClick={handleOrder}
-                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
-                    >
-                      <FaWhatsapp className="text-lg" />
-                      Order Now
-                    </button>
-                    {/* button end */}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </Container>
-      {/* // /////////////////// Premium Custom Bag Printing end /////////////////////////////// */}
       {/* // Rigid Drawer Packaging Box start///////////////// */}
       <Container>
         <div id="Chocolatebox" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">

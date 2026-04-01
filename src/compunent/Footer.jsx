@@ -40,6 +40,7 @@ const Footer = () => {
                   );
                 })}
               </div>
+  
             </div>
 
             {/* Quick Links */}
@@ -93,28 +94,27 @@ const Footer = () => {
               </h3>
 
               <ul className="space-y-4 text-gray-700 mt-6">
-                 
-                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    <a href="#cupproduct">Cup cake  box</a>
-                  </li>
-                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    <a href="#Abayacover">Abaya Cover</a>
-                  </li>
-                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    <a href="#Chocolatebox">Packaging Box </a>
-                  </li>
-                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    <a href="#LabelPrinting">Label Printing</a>
-                  </li>
-                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                    <a href="#Chocolatebox">Perfume box</a>
-                  </li>
-              
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#cupproduct">Cup cake  box</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Abayacover">Abaya Cover</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Chocolatebox">Packaging Box </a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#LabelPrinting">Label Printing</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Chocolatebox">Perfume box</a>
+                </li>
+
               </ul>
             </div>
             {/* Contact */}

@@ -13,6 +13,9 @@ const Service = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                         Our service
                     </h2>
+                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-7 md:leading-8 lg:leading-9 font-normal md:font-medium max-w-5xl mx-auto text-center px-4">
+                        We provide premium custom packaging solutions including Paper Bags, Cake Boxes, Chocolate Boxes, Sweet Boxes, Pizza Boxes, Burger Boxes, Perfume Boxes, and Corrugated Boxes. We also offer Wrapping Paper, Stickers, Business Cards, Thank You Cards, Bill Books, and Envelopes for complete branding support. In addition, we supply Woven Labels, Abaya Covers, Paper Cups, and Plastic Cups based on customer requirements.
+                    </p>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* LEFT IMAGES */}

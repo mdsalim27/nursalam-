@@ -14,6 +14,9 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             ABOUT US
           </h2>
+          <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-8 md:leading-9 font-medium max-w-4xl mx-auto text-center px-4">
+            We specialize in custom packaging solutions in Dubai, including customized Bags, Boxes, Labels, Abaya Covers, Cup Cake Box, Chocolate Box, Paper Bag, Perfume Box, Paper Cup, Sweet Box, Clothing Label, Wrapping Paper, Flower Bag and various printing items. (All item Customize) Our goal is to provide high-quality, creative, and reliable packaging that helps brands present their products professionally. We focus on delivering durable materials, clean designs, and timely service to meet every customer’s unique needs.
+          </p>
         </div>
         <div className="grid lg:grid-cols-1  items-center">
 
