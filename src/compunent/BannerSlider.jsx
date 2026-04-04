@@ -41,7 +41,7 @@ export default function BannerSlider() {
         setCurrent((current + 1) % slides.length);
     };
     return (
-        <section className="  bg-gray-200 lg:py-0 -my-[-30px]">
+        <section className="  bg-gray-200 lg:py-0 -my-[-25px]">
             <div className="w-full py-0 min-h-[60vh] md:min-h-[80vh] lg:min-h-screen relative overflow-hidden">        
                     {slides.map((slide, index) => (
                 <div
