@@ -42,7 +42,7 @@ export default function BannerSlider() {
     };
     return (
         <section className="  bg-gray-200">
-            <div className="w-full py-5 min-h-[60vh] md:min-h-[80vh] lg:min-h-screen relative overflow-hidden">        
+            <div className="w-full py-0 min-h-[60vh] md:min-h-[80vh] lg:min-h-screen relative overflow-hidden">        
                     {slides.map((slide, index) => (
                 <div
                     key={slide.id}
@@ -53,7 +53,7 @@ export default function BannerSlider() {
                     <img
                         src={slide.img}
                         alt=""
-                        className="w-full lg:pt-30 h-full object-contain drop-shadow-2xl"
+                        className="w-full lg:py-3 h-full object-contain drop-shadow-2xl"
                     />
                 </div>
             ))}

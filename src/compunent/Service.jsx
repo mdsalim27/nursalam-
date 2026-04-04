@@ -7,15 +7,48 @@ import { motion } from "framer-motion";
 
 const Service = () => {
     return (
-        <section className="bg-[#f3f4f6] py-10 pt-30">
+        <section className="bg-[#f3f4f6] py-10 pt-3">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                         Our service
                     </h2>
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-600 leading-7 md:leading-8 lg:leading-9 font-normal md:font-medium max-w-5xl mx-auto text-center px-4">
-                        We provide premium custom packaging solutions including Paper Bags, Cake Boxes, Chocolate Boxes, Sweet Boxes, Pizza Boxes, Burger Boxes, Perfume Boxes, and Corrugated Boxes. We also offer Wrapping Paper, Stickers, Business Cards, Thank You Cards, Bill Books, and Envelopes for complete branding support. In addition, we supply Woven Labels, Abaya Covers, Paper Cups, and Plastic Cups based on customer requirements.
-                    </p>
+                  
+
+                    <div className="max-w-5xl mx-auto px-4 text-center">
+                        <p className="text-base md:text-lg lg:text-xl text-gray-700 font-medium mb-6 leading-8">
+                            We provide premium custom packaging solutions including:
+                        </p>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  max-w-4xl text-center mx-auto">
+                            <ul className="space-y-3 text-base text-gray-600 leading-7">
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Paper Bags</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Cake Boxes</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Chocolate Boxes</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Sweet Boxes</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Pizza Boxes</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Burger Boxes</li>
+                            </ul>
+
+                            <ul className="space-y-3 text-base text-gray-600 leading-7">
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Stickers</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Business Cards</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Thank You Cards</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Bill Books</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Envelopes</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Woven Labels</li>
+                            </ul>
+
+                            <ul className="space-y-3 text-base text-gray-600 leading-7">
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Abaya Covers</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Paper Cups</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Plastic Cups</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Perfume Boxes</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Wrapping Paper</li>
+                                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Corrugated Boxes</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* LEFT IMAGES */}
@@ -23,7 +56,6 @@ const Service = () => {
                         <div className="absolute -top-6 -left-6 w-25 h-25 bg-gray-300 hidden sm:flex items-center justify-center text-center">
                             <p className="text-blue-800 font-bold italic">Welcome</p>
                         </div>
-
                         <div>
                             <motion.img
                                 src={product1}

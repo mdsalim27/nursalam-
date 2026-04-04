@@ -105,12 +105,7 @@ const products = [
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
-  {
-    img: abeya1,
-    title: "Premium Abaya box",
-    gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
-  },
+
   {
     img: abeya2,
     title: "Custom Abaya Box",
@@ -328,7 +323,7 @@ const Product = ({ item }) => {
 
   // ///////////////////////////////////////
   return (
-    <section className="bg-gray-50 -mt-[80px] lg:mt-0 lg:pt-30">
+    <section className="bg-gray-50 pt-3">
       {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
       <Container>
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">

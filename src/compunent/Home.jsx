@@ -1,6 +1,7 @@
 import React from 'react'
 import Product from './Product'
 import BannerSlider from './BannerSlider'
+import TextSlide from './TextSlide'
 // import Animation from './Animation'
 
 
@@ -8,7 +9,6 @@ import BannerSlider from './BannerSlider'
 const Home = () => {
   return (
     <div >
-      {/* <Animation/> */}
       <BannerSlider />
       <Product />
     </div>

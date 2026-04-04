@@ -4,6 +4,7 @@ import { Outlet } from 'react-router-dom'
 import Navebar from './Navebar'
 import Footer from './Footer'
 import { IoIosArrowUp } from 'react-icons/io'
+import TextSlide from './TextSlide'
 
 const RoutLeyout = () => {
 
@@ -25,6 +26,7 @@ const RoutLeyout = () => {
   return (
     <div className="relative">
       <Navebar />
+      <TextSlide/>
       <Outlet />
       <Footer />
 

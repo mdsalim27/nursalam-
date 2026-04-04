@@ -8,15 +8,46 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="bg-[#f3f4f6] py-10 pt-30">
+    <section className="bg-[#f3f4f6] py-10 pt-3">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             ABOUT US
           </h2>
-          <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-8 md:leading-9 font-medium max-w-4xl mx-auto text-center px-4">
-            We specialize in custom packaging solutions in Dubai, including customized Bags, Boxes, Labels, Abaya Covers, Cup Cake Box, Chocolate Box, Paper Bag, Perfume Box, Paper Cup, Sweet Box, Clothing Label, Wrapping Paper, Flower Bag and various printing items. (All item Customize) Our goal is to provide high-quality, creative, and reliable packaging that helps brands present their products professionally. We focus on delivering durable materials, clean designs, and timely service to meet every customer’s unique needs.
-          </p>
+          <div className="max-w-5xl mx-auto px-4 text-center">
+            <p className="text-base md:text-lg lg:text-xl text-gray-700 font-medium mb-6 leading-8">
+              We provide premium custom packaging solutions including:
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8  max-w-4xl text-center mx-auto">
+              <ul className="space-y-3 text-base text-gray-600 leading-7">
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Paper Bags</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Cake Boxes</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Chocolate Boxes</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Sweet Boxes</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Pizza Boxes</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Burger Boxes</li>
+              </ul>
+
+              <ul className="space-y-3 text-base text-gray-600 leading-7">
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Stickers</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Business Cards</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Thank You Cards</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Bill Books</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Envelopes</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Woven Labels</li>
+              </ul>
+
+              <ul className="space-y-3 text-base text-gray-600 leading-7">
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Abaya Covers</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Paper Cups</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Plastic Cups</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Perfume Boxes</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Wrapping Paper</li>
+                <li className="hover:text-black hover:font-semibold transition-all duration-300 cursor-pointer">• Corrugated Boxes</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="grid lg:grid-cols-1  items-center">
 
