@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Container from "./Container";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-// import logo from "../assets/logo1.jpeg"
 import logo from "../assets/logonab.png"
 
 const Navbar = () => {
