@@ -5,6 +5,7 @@ import Navebar from './Navebar'
 import Footer from './Footer'
 import { IoIosArrowUp } from 'react-icons/io'
 import TextSlide from './TextSlide'
+import NavebarFooter from './NavebarFooter'
 
 const RoutLeyout = () => {
 
@@ -26,10 +27,11 @@ const RoutLeyout = () => {
   return (
     <div className="relative">
       <Navebar />
-      <TextSlide/>
+      <TextSlide />
       <Outlet />
-      <Footer />
 
+      <Footer />
+      <NavebarFooter />
       {/* ✅ Scroll To Top Button */}
       {visible && (
         <button

@@ -40,113 +40,106 @@ const Footer = () => {
                   );
                 })}
               </div>
-  
+
             </div>
 
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 relative inline-block">
-                Quick Link
-                <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
-              </h3>
-              <ul className="space-y-4 text-gray-700 mt-6">
-                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <Link to={"/"}>
-                    Home
-                  </Link>
 
-                </li>
-                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <Link to={"/about"}>
-                    About Us
-                  </Link>
-                </li>
-                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <Link to={"/Product"}>
-
-                    Products
-                  </Link>
-                </li>
-                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <Link to={"/service"}>
-                    Services
-                  </Link>
-                </li>
-                <li onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
-                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <Link to={"/contact"}>
-                    Contact Us
-                  </Link>
-                </li>
-
-              </ul>
-            </div>
 
             {/* Services */}
+            <div>
+              <h3 className="text-2xl font-semibold mb-12 relative inline-block"></h3>
+              <div>
+                <ul className="space-y-4 text-gray-700 mt-6">
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#cupproduct">Cup cake  box</a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Abayacover">Abaya Cover</a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Chocolatebox">Packaging Box </a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#LabelPrinting">Label Printing</a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Chocolatebox">Perfume box</a>
+                  </li>
+                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                    <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                    <a href="#Chocolatebox">Cake Boxes</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div>
               <h3 className="text-2xl font-semibold mb-6 relative inline-block">
                 Services
                 <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
               </h3>
-
               <ul className="space-y-4 text-gray-700 mt-6">
                 <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                   <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <a href="#cupproduct">Cup cake  box</a>
+                  <a href="#cupproduct">Burger Boxes</a>
                 </li>
                 <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                   <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <a href="#Abayacover">Abaya Cover</a>
+                  <a href="#Abayacover">Stickers</a>
                 </li>
                 <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                   <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <a href="#Chocolatebox">Packaging Box </a>
+                  <a href="#Chocolatebox">Business Cards </a>
                 </li>
                 <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                   <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <a href="#LabelPrinting">Label Printing</a>
+                  <a href="#LabelPrinting">Bill Books</a>
                 </li>
                 <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                   <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
-                  <a href="#Chocolatebox">Perfume box</a>
+                  <a href="#Chocolatebox">Envelopes</a>
                 </li>
-
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Chocolatebox">Pizza Boxes</a>
+                </li>
               </ul>
             </div>
-            {/* Contact */}
             <div>
-              <h3 className="text-2xl font-semibold mb-6 relative inline-block">
-                Contact Us
-                <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
-              </h3>
-              <div className="space-y-5 mt-6 text-gray-700">
-                <div className="flex items-center gap-4">
-                  <div className="bg-gray-200 p-3 rounded-lg text-orange-500">
-                    <FiPhoneCall size={20} />
-                  </div>
-                  <p> +971 52 8089629<br />+971 56 9675332 </p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-gray-200 p-3 rounded-lg text-orange-500">
-                    <MdEmail size={20} />
-                  </div>
-                  <p>spnazmul7@gmail.com</p>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="bg-gray-200 p-3 rounded-lg text-orange-500">
-                    <FaLocationDot size={20} />
-                  </div>
-                  <p>
-                    Sharjah, UAE.
-                  </p>
-                </div>
-              </div>
+               <h3 className="text-2xl font-semibold mb-12 relative inline-block"></h3>
+              <ul className="space-y-4 text-gray-700 mt-6">
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#cupproduct">Woven Labels</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Abayacover">Plastic Cups</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Chocolatebox">Perfume Boxes </a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#LabelPrinting">Wrapping Paper</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Chocolatebox">Corrugated Boxes</a>
+                </li>
+                <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+                  <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
+                  <a href="#Chocolatebox">Sweet Boxes</a>
+                </li>
+              </ul>
             </div>
+
+
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-3xl font-bold mb-6 text-center">
                 Location
@@ -161,22 +154,6 @@ const Footer = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-            </div>
-          </div>
-
-          {/* Bottom Bar */}
-          <div className="bg-gray-300 mt-12 py-6">
-            <div className="max-w-7xl mx-auto px-6 text-center text-gray-700 text-sm sm:text-base md:text-lg">
-              © 2026{' '}
-              <a
-                href="https://www.electroselling.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 font-semibold hover:underline"
-              >
-                ELECTROSELLING.COM
-              </a>{' '}
-              | All rights reserved
             </div>
           </div>
         </footer>

@@ -82,23 +82,33 @@ const labelproduct = [
 const products = [
   // abeya box cover 
   {
-    img: abeyacover,
-    title: "Abaya Cover",
-    gsmColor: "text-blue-600",
+    img: product1,
+    title: "Custom bag,box.... ",
+    gsmColor: "text-red-600",
+    qty: ["500 pcs"],
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   {
-    img: abeyacover1,
-    title: "Abaya Cover",
+    img: product,
+    title: "Custom Box for dresss ",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
   },
   {
-    img: abeyacover2,
-    title: "Abaya Cover",
-    gsmColor: "text-blue-600",
+    img: product5,
+    title: "Custom Paper bag",
+    gsmColor: "text-red-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
+
+  {
+    img: product6,
+    title: "Custom Paper bag–",
+    gsmColor: "text-red-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
+
+
   {
     img: abeya,
     title: "Abaya Box Printing",
@@ -131,19 +141,8 @@ const products = [
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
   // Premium Custom Bag Printing  start
-  {
-    img: product,
-    title: "Custom Box for dresss ",
-    gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
-  },
-  {
-    img: product1,
-    title: "Custom bag,box.... ",
-    gsmColor: "text-red-600",
-    qty: ["500 pcs"],
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
-  },
+
+
   {
     img: product2,
     title: "Bag for foods....",
@@ -162,34 +161,36 @@ const products = [
     gsmColor: "text-red-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
-  {
-    img: product5,
-    title: "Custom Paper bag",
-    gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
-  },
-  {
-    img: product6,
-    title: "Custom Paper bag–",
-    gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
-  },
+
   {
     img: product7,
     title: "Custom Paper bag",
     gsmColor: "text-red-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
   },
+  {
+    img: abeyacover1,
+    title: "Abaya Cover",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
+  {
+    img: abeyacover,
+    title: "Abaya Cover",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
+  {
+    img: abeyacover2,
+    title: "Abaya Cover",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
 ];
 // /////////////////// Premium Custom Bag Printing end ///////////////////////////////
 // /////////////////// Premium Custom cup Printing start ///////////////////////////////
 const cupproduct = [
-  {
-    img: product1,
-    title: "Bag with tray custom size",
-    gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "500 pcs |", "5000 pcs"],
-  },
+
   {
     img: cupp1,
     title: "Cup cake box custom...",
@@ -232,16 +233,17 @@ const cupproduct = [
     gsmColor: "text-blue-600",
     qty: ["1000 pcs |", "5000 pcs |", "5000 pcs"],
   },
+  {
+    img: cupp2,
+    title: "Cup Customise",
+    gsmColor: "text-blue-600",
+    qty: ["1000 pcs |", "5000 pcs |", "5000 pcs"],
+  },
 ]
 // /////////////////// Premium Custom cup Printing end ///////////////////////////////
 // Rigid Drawer Packaging Box start/////////////////
 const boxproduct = [
-  {
-    img: box,
-    title: "Abaya box",
-    gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
-  },
+ 
   {
     img: box1,
     title: "Food box,dress box custom.",
@@ -308,6 +310,12 @@ const boxproduct = [
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
   },
+   {
+    img: box,
+    title: "Abaya box",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+  },
 ]
 // Rigid Drawer Packaging Box end/////////////////
 // whatsapp 
@@ -344,7 +352,7 @@ const Product = ({ item }) => {
       group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
             >
               Premium Custom Bag & Box Printing
-              </h2>
+            </h2>
 
             {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
