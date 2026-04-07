@@ -84,15 +84,15 @@ const NavebarFooter = () => {
                     </div>
 
                     {/* Mobile Menu Icon */}
+                </div>
                     <div
                         className="md:hidden cursor-pointer"
                         onClick={() => setIsOpen(!isOpen)}
                     >
                         {isOpen ? <X size={28} /> : <Menu size={28} />}
                     </div>
-                </div>
                 {/* Mobile Menu */}
-                {isOpen && (
+             {isOpen && (
                     <div className="md:hidden flex flex-col items-center gap-6 pb-6">
                         {menuItems.map((item) => (
                             <Link
@@ -111,18 +111,8 @@ const NavebarFooter = () => {
                             </Link>
                         ))}
 
-                        <Link
-                            to="/quote"
-                            onClick={() => {
-                                setIsOpen(false);
-                                handleScrollTop();
-                            }}
-                            className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
-                        >
-                            GET FREE QUOTE
-                        </Link>
                     </div>
-                )}
+                )} 
             </Container>
                 {/* Bottom Bar */}
                 <div className="bg-gray-300 py-6">
