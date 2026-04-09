@@ -13,7 +13,6 @@ const Service = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                         Our service
                     </h2>
-                  
 
                     <div className="max-w-5xl mx-auto px-4 text-center">
                         <p className="text-base md:text-lg lg:text-xl text-gray-700 font-medium mb-6 leading-8">
@@ -70,20 +69,24 @@ const Service = () => {
                         </div>
                     </div>
                     {/* RIGHT CONTENT */}
+
                     <div data-aos="fade-left">
                         <p className="text-orange-500 font-semibold uppercase text-sm mb-2">
                             Who We Are
                         </p>
-                        <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6 leading-snug">
-                            Printing Press LLC: <br />
-                            Bring Your Vision to Life.
+                        <h2 className="text-3xl lg:text-3xl font-bold text-gray-800 mb-6 leading-snug">
+
+                            Printing & Packaging Experts in UAE <br />
+                                
+                            <span className=" text-2xl">
+                            Custom Bags & Boxes That Elevate Your Brand
+                            </span>
                         </h2>
                         <p className="text-gray-600 mb-4 leading-relaxed">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem praesentium labore numquam non? Vero ex illum corporis sed placeat magnam.
+                            We specialize in premium custom paper bags, shopping bags, gift boxes, and packaging solutions across the UAE. From concept to final production, we help businesses create eye-catching designs that leave a lasting impression.
                         </p>
                         <p className="text-gray-600 leading-relaxed">
-                            The heart of our success lies in our team...
-                        </p>
+                            Our team combines creative design with high-quality printing to deliver packaging that reflects your brand identity perfectly.                        </p>
                     </div>
                 </div>
                 <div className="space-y-16 py-12">

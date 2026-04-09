@@ -12,13 +12,14 @@ import About from './compunent/About'
 import Quote from './compunent/Quote'
 import Service from './compunent/Service'
 import Product from './compunent/Product'
+import Products from './compunent/Products'
 
 function App() {
   let router = createBrowserRouter(createRoutesFromElements(
     <Route element={<RoutLeyout />}>
       <Route path='/' element={<Home />}></Route>
       <Route path='/service' element={<Service />}></Route>
-      <Route path='/Product' element={<Product />}></Route>
+      <Route path='/Products' element={<Products />}></Route>
       <Route path='/contact' element={<Contact />}></Route>
       <Route path='/about' element={<About />}></Route>
       <Route path='/quote' element={<Quote />}></Route>
