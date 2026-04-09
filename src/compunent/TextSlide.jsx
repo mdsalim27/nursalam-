@@ -118,13 +118,19 @@ const TextSlide = () => {
       <motion.div
         animate={{ x: ["100%", "-100%"] }}
         transition={{
-          duration: 18,
+          duration: 30,
           repeat: Infinity,
           ease: "linear",
         }}
         className="whitespace-nowrap text-sm sm:text-base md:text-lg lg:text-2xl font-semibold tracking-[0.25em] uppercase text-gray-800 italic"
       >
-        CUSTOM BAG BOX-UAE *** CUSTOM BAG BOX-UAE *** CUSTOM BAG BOX-UAE *** CUSTOM BAG BOX-UAE *
+        <span>WELCOME TO</span>*
+        <span className=" text-blue-700">CUSTOM BAG BOX-UAE</span>*
+        <span className=" text-green-600">CUSTOM BAG BOX-UAE</span>*
+        <span className=" text-amber-400">CUSTOM BAG BOX-UAE</span>*
+        <span className=" text-black">CUSTOM BAG BOX-UAE</span>*
+        <span className=" text-purple-700">CUSTOM BAG BOX-UAE</span>*
+
       </motion.div>
     </div>
   );
