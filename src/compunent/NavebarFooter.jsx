@@ -22,7 +22,7 @@ const NavebarFooter = () => {
     const menuItems = [
         { name: "HOME", path: "/" },
         { name: "ABOUT US", path: "/about" },
-        { name: "PRODUCT", path: "/Product" },
+        { name: "PRODUCT", path: "/Products" },
         { name: "SERVICE", path: "/service" },
         { name: "CONTACT", path: "/contact" },
     ];
