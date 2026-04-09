@@ -46,7 +46,7 @@ export default function BannerSlider() {
   };
 
   return (
-    <section className="bg-gray-200 h-80 overflow-hidden">
+    <section className="bg-gray-200 h-80 overflow-hidden -my-15 lg:my-0">
       <div className="relative w-full h-full">
 
         {slides.map((slide, index) => (

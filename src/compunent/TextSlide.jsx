@@ -116,7 +116,7 @@ const TextSlide = () => {
   return (
     <div className="relative overflow-hidden bg-white py-3 pt-29">
       <motion.div
-        animate={{ x: ["100%", "-100%"] }}
+        animate={{ x: ["50%", "-100%"] }}
         transition={{
           duration: 30,
           repeat: Infinity,
