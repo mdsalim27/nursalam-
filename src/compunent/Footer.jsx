@@ -46,11 +46,15 @@ const Footer = () => {
 
 
             {/* Services */}
-            <div>
+            <div className="">
+               <h3 className="text-2xl font-semibold mb-6 relative inline-block lg:hidden visible">
+                Services
+                <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
+              </h3>
               <h3 className="text-2xl font-semibold mb-12 relative inline-block"></h3>
-              <div>
-                <ul className="space-y-4 text-gray-700 mt-6">
-                  <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
+              <div className="">
+                <ul className="space-y-4 text-gray-700 mt-6 ">
+                  <li className=" flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">
                     <FaCircle className="text-[8px] text-orange-500 animate-pulse" />
                     <a href="#cupproduct">Cup cake  box</a>
                   </li>
@@ -78,7 +82,7 @@ const Footer = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold mb-6 relative inline-block">
+              <h3 className="text-2xl font-semibold mb-6 relative inline-block ">
                 Services
                 <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
               </h3>
@@ -110,6 +114,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
+                <h3 className="text-2xl font-semibold mb-6 relative inline-block lg:hidden visible">
+                Services
+                <span className="absolute left-0 -bottom-2 w-16 h-1 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-full"></span>
+              </h3>
                <h3 className="text-2xl font-semibold mb-12 relative inline-block"></h3>
               <ul className="space-y-4 text-gray-700 mt-6">
                 <li className="flex items-center gap-2 hover:text-orange-500 cursor-pointer transition">

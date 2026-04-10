@@ -271,7 +271,7 @@ const Products = ({ item }) => {
     <section className="bg-gray-50 pt-3">
       <Container>
         {/* ✅ Responsive Grid */}
-        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-6 py-8 md:py-10 ">
+        <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 py-8 md:py-10 ">
           {products.map((item, index) => (
             <motion.div
               key={product.id}
@@ -293,7 +293,7 @@ const Products = ({ item }) => {
              transition-transform duration-700 
              group-hover:scale-110 cursor-pointer"
                   />
-                  <div className="absolute bottom-0 w-full bg-black/60 text-white text-sm sm:text-base md:text-lg font-semibold px-4 py-2 text-center">
+                  <div className="absolute bottom-0 w-full bg-black/60 text-white text-xs sm:text-base md:text-xs font-semibold px-4 py-2 text-center">
                     {item.title}
                   </div>
                 </div>
