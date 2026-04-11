@@ -46,7 +46,7 @@ const Contact = () => {
                                     href="tel:+971 52 8089629"
                                     className="text-gray-600 hover:text-blue-600"
                                 >
-                                    +971 52 8089629
+                                    +971 56 9675332
                                 </a>
                             </div>
                         </div>
