@@ -8,8 +8,7 @@ const letters = [
 
 const TextSlide = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-60 sm:h-60 md:h-60 lg:h-60 bg-black/80 overflow-hidden lg:pt-13 pt-25">
-
+    <div className="relative flex flex-col justify-center items-center h-60 sm:h-60 md:h-60 lg:h-60 bg-[#030200] overflow-hidden lg:pt-13 pt-25">
       {/* 🔥 Welcome Text */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}

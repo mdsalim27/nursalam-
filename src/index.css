@@ -30,3 +30,17 @@ html {
 .group:hover .gold-hover {
   animation: goldFade 0.8s ease-in-out forwards;
 }
+
+/* banner slider */
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  animation: slide 25s linear infinite;
+}transition-all duration-1000 ease-[cubic-bezier(0.22,1,0.36,1)]
