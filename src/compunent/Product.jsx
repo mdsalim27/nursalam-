@@ -58,25 +58,25 @@ const labelproduct = [
     img: label0,
     title: "Label Printing  ",
     gsmColor: "text-blue-600",
-    qty: ["1000 pcs |", "2000 pcs |", "5000 pcs"],
+    qty: ["1000 pcs |", "5000 pcs |", "10000 pcs"],
   },
   {
     img: label1,
     title: "Label Printing",
     gsmColor: "text-blue-600",
-    qty: ["1000 pcs |", "2000 pcs |", "5000 pcs"],
+    qty: ["1000 pcs |", "5000 pcs |", "10000 pcs"],
   },
   {
     img: label2,
     title: "Label Printing",
     gsmColor: "text-blue-600",
-    qty: ["1000 pcs |", "2000 pcs |", "5000 pcs"],
+    qty: ["1000 pcs |", "5000 pcs |", "10000 pcs"],
   },
   {
     img: label3,
     title: "Label Printing",
     gsmColor: "text-blue-600",
-    qty: ["1000 pcs |", "2000 pcs |", "5000 pcs"],
+    qty: ["1000 pcs |", "5000 pcs |", "10000 pcs"],
   },
 ]
 const products = [
@@ -201,7 +201,7 @@ const cupproduct = [
     img: cupp2,
     title: "Cup Customise",
     gsmColor: "text-blue-600",
-    qty: ["1000pcs ", "5000pcs ","50000pcs"],
+    qty: ["1000pcs ", "5000pcs ", "50000pcs"],
   },
   {
     img: cupp3,
@@ -237,13 +237,13 @@ const cupproduct = [
     img: cupp2,
     title: "Cup Customise",
     gsmColor: "text-blue-600",
-    qty: ["1000pcs ", "5000pcs ","50000pcs"],
+    qty: ["1000pcs ", "5000pcs ", "50000pcs"],
   },
 ]
 // /////////////////// Premium Custom cup Printing end ///////////////////////////////
 // Rigid Drawer Packaging Box start/////////////////
 const boxproduct = [
- 
+
   {
     img: box1,
     title: "Food box,dress box custom.",
@@ -310,7 +310,7 @@ const boxproduct = [
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
   },
-   {
+  {
     img: box,
     title: "Abaya box",
     gsmColor: "text-blue-600",
@@ -334,40 +334,40 @@ const Product = ({ item }) => {
     <section className="bg-gray-50 pt-3">
       {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
       <Container>
-        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br  from-red-600/10 via-transparent to-red-500/10"></div>
 
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
             {/* Heading */}
             <h2
               className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-      bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
-      bg-clip-text text-transparent tracking-wider
-      drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-      mb-1 leading-tight
-      transition-all duration-1000 ease-in-out
-      group-hover:scale-105
-      group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
+               bg-clip-text text-transparent tracking-wider
+               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
+               mb-1 leading-tight
+               transition-all duration-1000 ease-in-out
+               group-hover:scale-105
+               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
             >
               Premium Custom Bag & Box Printing
             </h2>
 
             {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
-              <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
+              <div className="w-3 h-3 mx-3 bg-[#EB4203] rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
             </div>
 
             {/* Description */}
             <p
               className="gold-hover text-base sm:text-lg md:text-xl
-                      not-only-of-type: text-gray-300 font-medium leading-relaxed
+                      not-only-of-type: text-black font-medium leading-relaxed
                       not-only-of-type: max-w-3xl mx-auto space-y-2
                       not-only-of-type: transition-all duration-1000 ease-in-out
-                      not-only-of-type: group-hover:text-gray-100
+                      not-only-of-type: group-hover:text-black
                       not-only-of-type: group-hover:-translate-y-1"
             >
               We provide premium custom packaging solutions including:
@@ -440,39 +440,40 @@ const Product = ({ item }) => {
 
       {/* // /////////////////// Premium Custom cup Printing start /////////////////////////////// */}
       <Container >
-        <div id="cupproduct" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/10"></div>
+
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
             {/* Heading */}
             <h2
               className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-      bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
-      bg-clip-text text-transparent tracking-wider
-      drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-      mb-1 leading-tight
-      transition-all duration-1000 ease-in-out
-      group-hover:scale-105
-      group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
+               bg-clip-text text-transparent tracking-wider
+               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
+               mb-1 leading-tight
+               transition-all duration-1000 ease-in-out
+               group-hover:scale-105
+               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
             >
-              Premium Custom Cup Printing
-            </h2>
+              Premium Custom Cup Printing            </h2>
 
             {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
-              <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
+              <div className="w-3 h-3 mx-3 bg-[#EB4203] rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
             </div>
+
 
             {/* Description */}
             <p
               className="gold-hover text-base sm:text-lg md:text-xl
-      text-gray-300 font-medium leading-relaxed
+      text-black font-medium leading-relaxed
       max-w-3xl mx-auto space-y-2
       transition-all duration-1000 ease-in-out
-      group-hover:text-gray-100
+      group-hover:text-black
       group-hover:-translate-y-1"
             >
               We provide premium custom packaging solutions including:
@@ -589,38 +590,40 @@ const Product = ({ item }) => {
 
       {/* // Rigid Drawer Packaging Box start///////////////// */}
       <Container>
-        <div id="Chocolatebox" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/10"></div>
 
           <div className="relative max-w-5xl mx-auto px-6 text-center">
+
             {/* Heading */}
             <h2
               className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-      bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600
-      bg-clip-text text-transparent tracking-wider
-      drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-      mb-1 leading-tight
-      transition-all duration-1000 ease-in-out
-      group-hover:scale-105
-      group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
+               bg-clip-text text-transparent tracking-wider
+               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
+               mb-1 leading-tight
+               transition-all duration-1000 ease-in-out
+               group-hover:scale-105
+               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
             >
               Premium Custom Drawer Packaging Box Printing
             </h2>
-            {/* Divider */}
+
+            {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
-              <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
+              <div className="w-3 h-3 mx-3 bg-[#EB4203] rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
             </div>
 
             {/* Description */}
             <p
               className="gold-hover text-base sm:text-lg md:text-xl
-      text-gray-300 font-medium leading-relaxed
+      text-black font-medium leading-relaxed
       max-w-3xl mx-auto space-y-2
       transition-all duration-1000 ease-in-out
-      group-hover:text-gray-100
+      group-hover:text-black
       group-hover:-translate-y-1"
             >
               We provide premium custom packaging solutions including:
@@ -698,34 +701,38 @@ const Product = ({ item }) => {
       {/* // Rigid Drawer Packaging Box end///////////////// */}
       {/* // label start ///////////////// */}
       <Container>
-        <div id="LabelPrinting" className="group cursor-pointer relative py-2 md:py-7 bg-black overflow-hidden">
+        <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 via-transparent to-yellow-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/10"></div>
 
           <div className="relative max-w-5xl mx-auto px-6 text-center">
+
             {/* Heading */}
             <h2
-              className=" gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold 
-      bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 
-      bg-clip-text text-transparent tracking-wider 
-      drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-      mb-1 leading-tight transition-all duration-700
-      group-hover:scale-105 group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+              className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
+               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
+               bg-clip-text text-transparent tracking-wider
+               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
+               mb-1 leading-tight
+               transition-all duration-1000 ease-in-out
+               group-hover:scale-105
+               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
             >
               Label Printing
             </h2>
+
             {/* Luxury Divider */}
-            <div className="flex items-center justify-center mb-3 transition-all duration-700 group-hover:scale-110">
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
-              <div className="w-3 h-3 mx-3 bg-yellow-500 rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
-              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-yellow-500 to-transparent"></div>
+            <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
+              <div className="w-3 h-3 mx-3 bg-[#EB4203] rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
             </div>
             {/* Description */}
             <p
               className=" gold-hover text-base sm:text-lg md:text-xl 
-      text-gray-300 font-medium leading-relaxed 
+      text-black font-medium leading-relaxed 
       max-w-3xl mx-auto space-y-2 transition-all duration-700
-      group-hover:text-gray-100 group-hover:translate-y-[-3px]"
+      group-hover:text-black group-hover:translate-y-[-3px]"
             >
               We provide premium custom packaging solutions including:
               <br />

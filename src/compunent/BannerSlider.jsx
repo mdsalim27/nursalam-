@@ -21,7 +21,7 @@ export default function BannerSlider() {
   }, []);
 
   return (
-    <div className="w-full h-90 flex items-center justify-center overflow-hidden bg-green-900 -my-19 lg:my-0">
+    <div className="w-full h-90 flex items-center justify-center overflow-hidden bg-[#C1DEC3] -my-19 lg:my-0">
       <div className="relative w-full max-w-5xl h-full flex items-center justify-center">
         {slides.map((img, index) => {
           let position = "";

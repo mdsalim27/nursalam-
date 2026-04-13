@@ -24,7 +24,7 @@ const Navbar = () => {
     { name: "CONTACT", path: "/contact" },
   ];
   return (
-    <header className="w-full bg-gray-100 shadow-md fixed z-50 ">
+    <header className="w-full bg-[#C1DEC3] shadow-md fixed z-50 ">
       <Container>
         <div className="flex items-center justify-between  ">
           <Link
