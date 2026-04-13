@@ -331,25 +331,21 @@ const Product = ({ item }) => {
 
   // ///////////////////////////////////////
   return (
-    <section className="bg-gray-50 pt-3">
+    <section className="bg-[#FFF5E4] pt-3">
       {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
-      <section className="bg-[#A7F0DD]">
-
+      <Container className="">
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br "></div>
+          <div className="absolute inset-0 bg-gradient-to-br"></div>
           <div className="relative max-w-5xl mx-auto px-6 text-center">
-
             {/* Heading */}
             <h2
               className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
-               bg-clip-text text-transparent tracking-wider
-               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-               mb-1 leading-tight
-               transition-all duration-1000 ease-in-out
-               group-hover:scale-105
-               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+       bg-gradient-to-r from-[#DB1A1A] via-[#DB1A1A] to-[#DB1A1A]
+       bg-clip-text text-transparent tracking-wider
+       mb-1 leading-tight
+       transition-all duration-1000 ease-in-out
+       group-hover:scale-105"
             >
               Premium Custom Bag & Box Printing
             </h2>
@@ -357,18 +353,20 @@ const Product = ({ item }) => {
             {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
               <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
-              <div className="w-3 h-3 mx-3 bg-[#EB4203] rotate-45 shadow-[0_0_15px_gold] group-hover:animate-pulse"></div>
+
+              <div className="w-3 h-3 mx-3 bg-[#EB4203] rotate-45 group-hover:animate-pulse"></div>
+
               <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#EB4203] to-transparent"></div>
             </div>
 
             {/* Description */}
             <p
               className="gold-hover text-base sm:text-lg md:text-xl
-                      not-only-of-type: text-black font-medium leading-relaxed
-                      not-only-of-type: max-w-3xl mx-auto space-y-2
-                      not-only-of-type: transition-all duration-1000 ease-in-out
-                      not-only-of-type: group-hover:text-black
-                      not-only-of-type: group-hover:-translate-y-1"
+      text-black font-medium leading-relaxed
+      max-w-3xl mx-auto
+      transition-all duration-1000 ease-in-out
+      group-hover:text-black
+      group-hover:-translate-y-1"
             >
               We provide premium custom packaging solutions including:
               <br />
@@ -382,10 +380,9 @@ const Product = ({ item }) => {
               ✦ Wrapping Paper
               ✦ Stickers, Cards, Tags, Envelopes & more.
             </p>
+
           </div>
         </div>
-      </section>
-      <Container className="">
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
           {products.map((item, index) => (
@@ -438,9 +435,7 @@ const Product = ({ item }) => {
           ))}
         </div>
       </Container>
-
       {/* // /////////////////// Premium Custom Bag Printing end /////////////////////////////// */}
-
       {/* // /////////////////// Premium Custom cup Printing start /////////////////////////////// */}
       <Container >
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
@@ -452,15 +447,14 @@ const Product = ({ item }) => {
             {/* Heading */}
             <h2
               className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
-               bg-clip-text text-transparent tracking-wider
-               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-               mb-1 leading-tight
-               transition-all duration-1000 ease-in-out
-               group-hover:scale-105
-               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+       bg-gradient-to-r from-[#DB1A1A] via-[#DB1A1A] to-[#DB1A1A]
+       bg-clip-text text-transparent tracking-wider
+       mb-1 leading-tight
+       transition-all duration-1000 ease-in-out
+       group-hover:scale-105"
             >
-              Premium Custom Cup Printing            </h2>
+              Premium Custom Cup Printing
+            </h2>
 
             {/* Luxury Divider */}
             <div className="flex items-center justify-center mb-3 transition-all duration-1000 ease-in-out group-hover:scale-110">
@@ -552,8 +546,6 @@ const Product = ({ item }) => {
         </div>
       </Container>
       {/* Premium Gold Modal */}
-
-
       {selectedImage && (
         <div
           onClick={closeModal}
@@ -587,10 +579,6 @@ const Product = ({ item }) => {
         </div>
       )}
       {/* // /////////////////// Premium Custom cup Printing end /////////////////////////////// */}
-
-
-
-
       {/* // Rigid Drawer Packaging Box start///////////////// */}
       <Container>
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
@@ -602,13 +590,11 @@ const Product = ({ item }) => {
             {/* Heading */}
             <h2
               className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
-               bg-clip-text text-transparent tracking-wider
-               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-               mb-1 leading-tight
-               transition-all duration-1000 ease-in-out
-               group-hover:scale-105
-               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+       bg-gradient-to-r from-[#DB1A1A] via-[#DB1A1A] to-[#DB1A1A]
+       bg-clip-text text-transparent tracking-wider
+       mb-1 leading-tight
+       transition-all duration-1000 ease-in-out
+       group-hover:scale-105"
             >
               Premium Custom Drawer Packaging Box Printing
             </h2>
@@ -711,14 +697,12 @@ const Product = ({ item }) => {
 
             {/* Heading */}
             <h2
-              className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
-               bg-gradient-to-r from-[#EB4203] via-[#EB4203] to-[#EB4203]
-               bg-clip-text text-transparent tracking-wider
-               drop-shadow-[0_0_25px_rgba(255,215,0,0.6)]
-               mb-1 leading-tight
-               transition-all duration-1000 ease-in-out
-               group-hover:scale-105
-               group-hover:drop-shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+                  className="gold-hover text-2xl sm:text-3xl md:text-5xl font-extrabold
+       bg-gradient-to-r from-[#DB1A1A] via-[#DB1A1A] to-[#DB1A1A]
+       bg-clip-text text-transparent tracking-wider
+       mb-1 leading-tight
+       transition-all duration-1000 ease-in-out
+       group-hover:scale-105"
             >
               Label Printing
             </h2>

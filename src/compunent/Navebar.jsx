@@ -4,8 +4,15 @@ import Container from "./Container";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logonab.png"
+import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
+  const whatsappNumber = "+971528089629";
+
+  const handleOrder = () => {
+    window.open(`https://wa.me/${whatsappNumber}`, "_blank");
+  };
+
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   // 🔥 Smooth Scroll Function
@@ -33,7 +40,7 @@ const Navbar = () => {
             className="text-2xl font-bold text-blue-600"
           >
             <div className=" w-45 h-25">
-              <img  className="w-full h-full" src={logo} alt="" />
+              <img className="w-full h-full" src={logo} alt="" />
             </div>
           </Link>
           {/* Desktop Menu */}
@@ -44,8 +51,8 @@ const Navbar = () => {
                   to={item.path}
                   onClick={handleScrollTop}
                   className={`relative pb-1 transition duration-300 ${location.pathname === item.path
-                      ? "text-blue-600 after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-600"
-                      : "hover:text-blue-600"
+                    ? "text-blue-600 after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-blue-600"
+                    : "hover:text-blue-600"
                     }`}
                 >
                   {item.name}
@@ -53,13 +60,15 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <Link
-            to="/quote"
-            onClick={handleScrollTop}
-            className="hidden md:block bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-lg transition"
+          {/* button start */}
+          <button
+            onClick={handleOrder}
+            className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
           >
-            GET FREE QUOTE
-          </Link>
+            <FaWhatsapp className="text-lg" />
+            Order Now
+          </button>
+          {/* button end */}
           {/* Mobile Menu Icon */}
           <div
             className="md:hidden cursor-pointer"
@@ -80,24 +89,23 @@ const Navbar = () => {
                   handleScrollTop();
                 }}
                 className={`font-medium ${location.pathname === item.path
-                    ? "text-blue-600 border-b-2 border-blue-600"
-                    : ""
+                  ? "text-blue-600 border-b-2 border-blue-600"
+                  : ""
                   }`}
               >
                 {item.name}
               </Link>
             ))}
 
-            <Link
-              to="/quote"
-              onClick={() => {
-                setIsOpen(false);
-                handleScrollTop();
-              }}
-              className="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition"
+            {/* button start */}
+            <button
+              onClick={handleOrder}
+              className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
             >
-              GET FREE QUOTE
-            </Link>
+              <FaWhatsapp className="text-lg" />
+              Order Now
+            </button>
+            {/* button end */}
           </div>
         )}
       </Container>

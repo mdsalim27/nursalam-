@@ -4,7 +4,7 @@ import { FaCircle, FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaYoutube
 import { FiPhoneCall } from "react-icons/fi";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
-import logo from "../assets/logoFooter.png"
+import logo from "../assets/logonab.png"
 import Container from "./Container";
 import { Link } from "react-router-dom";
 
@@ -13,13 +13,13 @@ const Footer = () => {
     { icon: FaInstagram, link: "https://www.instagram.com/abaya_bag_box_label_logo?utm_source=qr&igsh=Z21qZzdpMmYwbncx" },
   ];
   return (
-    <section className=" bg-gray-200 pt-14">
+    <section className=" bg-[#F0FFC2] pt-14">
       <Container>
         <footer >
           <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-10">
             {/* Left Section */}
             <div>
-              <div className="bg-gray-200  flex items-center justify-center">
+              <div className="  flex items-center justify-center">
                 <img src={logo} alt="logo" className="h-full object-contain" />
               </div>
               <div className="flex gap-3 pt-6">
@@ -31,11 +31,11 @@ const Footer = () => {
                       href={item.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gray-200 flex items-center justify-center rounded-lg p-4 
+                      className=" flex items-center justify-center rounded-lg p-4 
                    transition-all duration-300 
                    hover:scale-105 hover:shadow-xl"
                     >
-                      <Icon className="w-16 h-16 md:w-20 md:h-20 transition-all duration-300" />
+                      <Icon className="w-16 h-16 md:w-20 md:h-20 transition-all duration-300 " />
                     </a>
                   );
                 })}

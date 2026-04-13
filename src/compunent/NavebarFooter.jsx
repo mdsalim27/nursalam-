@@ -27,7 +27,7 @@ const NavebarFooter = () => {
         { name: "CONTACT", path: "/contact" },
     ];
     return (
-        <header className="w-full bg-gray-300 shadow-md pt-3 ">
+        <header className="w-full bg-[#F0FFC2] shadow-md pt-3 ">
             <Container>
                 <div className="flex items-center justify-between  ">
                   

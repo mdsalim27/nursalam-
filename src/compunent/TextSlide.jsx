@@ -8,13 +8,13 @@ const letters = [
 
 const TextSlide = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center h-60 sm:h-60 md:h-60 lg:h-60 bg-[#A7F0DD] overflow-hidden lg:pt-13 pt-25">
+    <div className="relative flex flex-col justify-center items-center h-60 sm:h-60 md:h-60 lg:h-60 bg-[#F0FFC2] overflow-hidden lg:pt-13 pt-25">
       {/* 🔥 Welcome Text */}
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-xs sm:text-sm md:text-lg lg:text-xl font-semibold text-[#EB4203] tracking-[0.3em] mb-1 sm:mb-2"
+        className="text-xs sm:text-sm md:text-lg lg:text-xl font-semibold text-[#DB1A1A ] tracking-[0.3em] mb-1 sm:mb-2"
       >
         WELCOME TO
       </motion.h2>
@@ -36,7 +36,7 @@ const TextSlide = () => {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="text-[#EB4203] drop-shadow-[0_0_6px_rgba(255,215,0,0.7)]"          >
+            className="text-[#DB1A1A] drop-shadow-[0_0_6px_rgba(255,215,0,0.7)]"          >
             {letter}
           </motion.span>
         ))}
