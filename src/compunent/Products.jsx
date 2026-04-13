@@ -268,7 +268,7 @@ const Products = ({ item }) => {
   const handleImageClick = (img) => setSelectedImage(img);
   const closeModal = () => setSelectedImage(null);
   return (
-    <section className="bg-[#FFF5E4] pt-3">
+    <section className="bg-[#FFF5E4] pt-19">
       <Container>
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-2 py-8 md:py-10 ">

@@ -331,7 +331,7 @@ const Product = ({ item }) => {
 
   // ///////////////////////////////////////
   return (
-    <section className=" bg-[#FFF5E4] pt-3">
+    <section className=" bg-[#FFF5E4] pt-19 ">
       {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
       <Container className="">
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">

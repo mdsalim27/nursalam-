@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Service = () => {
     return (
-        <section className="bg-[#FFF5E4] py-10 pt-3 ">
+        <section className="bg-[#FFF5E4] py-10 pt-19 ">
             <div className="max-w-7xl mx-auto px-6 overflow-hidden">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
