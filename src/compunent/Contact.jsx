@@ -9,7 +9,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="bg-gray-50 min-h-screen py-3 px-4">
+        <section className="bg-[#FFF5E4] min-h-screen py-3 px-4">
             <div className="max-w-6xl mx-auto">
                 {/* Heading */}
                 <div className="text-center mb-5">

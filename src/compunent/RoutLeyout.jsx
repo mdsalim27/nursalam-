@@ -92,6 +92,7 @@ import { IoIosArrowUp } from 'react-icons/io'
 import TextSlide from './TextSlide'
 import NavebarFooter from './NavebarFooter'
 import { FaWhatsapp } from 'react-icons/fa'
+import BannerSlider from './BannerSlider'
 
 const RoutLeyout = () => {
 
@@ -124,6 +125,7 @@ const RoutLeyout = () => {
 
       <Navebar />
       <TextSlide />
+            <BannerSlider />
       <Outlet />
       <Footer />
       <NavebarFooter />
