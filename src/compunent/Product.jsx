@@ -86,26 +86,26 @@ const products = [
     title: "Custom bag,box.... ",
     gsmColor: "text-red-600",
     qty: ["500 pcs"],
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: product,
     title: "Custom Box for dresss ",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: product5,
     title: "Custom Paper bag",
     gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 
   {
     img: product6,
     title: "Custom Paper bag–",
     gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 
 
@@ -113,32 +113,32 @@ const products = [
     img: abeya,
     title: "Abaya Box Printing",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 
   {
     img: abeya2,
     title: "Custom Abaya Box",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: abeya4,
     title: " Abaya Box Printing",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: abeya5,
     title: "Custom Luxury Abaya",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: abeya6,
     title: "Branded Abaya Packaging",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   // Premium Custom Bag Printing  start
 
@@ -147,44 +147,44 @@ const products = [
     img: product2,
     title: "Bag for foods....",
     gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: product3,
     title: "Custom Paper bag",
     gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: product4,
     title: "Custom Paper bag",
     gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 
   {
     img: product7,
     title: "Custom Paper bag",
     gsmColor: "text-red-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: abeyacover1,
     title: "Abaya Cover",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: abeyacover,
     title: "Abaya Cover",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: abeyacover2,
     title: "Abaya Cover",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 ];
 // /////////////////// Premium Custom Bag Printing end ///////////////////////////////
@@ -248,73 +248,73 @@ const boxproduct = [
     img: box1,
     title: "Food box,dress box custom.",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box2,
     title: "Food box,dress box custom.",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box3,
     title: "Food box,dress box custom.",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box4,
     title: "Food box custom",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box5,
     title: "Custom Cake box",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box6,
     title: "Custom Cake box",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box7,
     title: "Custom box..",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box8,
     title: "Custom bag,box for food",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box9,
     title: "Custom cake box...",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box10,
     title: "Custom bag with tray.....",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box11,
     title: "Custom Food box",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"]
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
   {
     img: box,
     title: "Abaya box",
     gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "1000 pcs |", "5000 pcs |"],
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 ]
 // Rigid Drawer Packaging Box end/////////////////
@@ -333,11 +333,11 @@ const Product = ({ item }) => {
   return (
     <section className="bg-gray-50 pt-3">
       {/* // /////////////////// Premium Custom Bag Printing start /////////////////////////////// */}
-      <Container>
+      <section className="bg-[#A7F0DD]">
+
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br  from-red-600/10 via-transparent to-red-500/10"></div>
-
+          <div className="absolute inset-0 bg-gradient-to-br "></div>
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
             {/* Heading */}
@@ -384,6 +384,8 @@ const Product = ({ item }) => {
             </p>
           </div>
         </div>
+      </section>
+      <Container className="">
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
           {products.map((item, index) => (
@@ -436,13 +438,14 @@ const Product = ({ item }) => {
           ))}
         </div>
       </Container>
+
       {/* // /////////////////// Premium Custom Bag Printing end /////////////////////////////// */}
 
       {/* // /////////////////// Premium Custom cup Printing start /////////////////////////////// */}
       <Container >
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-white/80"></div>
 
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
@@ -592,7 +595,7 @@ const Product = ({ item }) => {
       <Container>
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-white/80"></div>
 
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
@@ -700,11 +703,10 @@ const Product = ({ item }) => {
       </Container>
       {/* // Rigid Drawer Packaging Box end///////////////// */}
       {/* // label start ///////////////// */}
-      <Container>
+      <Container className=" ">
         <div id="Abayacover" className="group cursor-pointer relative py-2 md:py-7 bg-[#A7F0DD] overflow-hidden">
           {/* Gold Glow Background Effect */}
-          <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-500/10"></div>
-
+          <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-white/80"></div>
           <div className="relative max-w-5xl mx-auto px-6 text-center">
 
             {/* Heading */}
@@ -748,6 +750,7 @@ const Product = ({ item }) => {
             </p>
           </div>
         </div>
+
         {/* ✅ Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-8 md:py-10">
           {labelproduct.map((item, index) => (
