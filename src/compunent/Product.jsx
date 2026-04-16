@@ -14,6 +14,11 @@ import product6 from "../assets/product6.jpeg";
 import product7 from "../assets/product7.jpeg";
 // Premium Custom Bag Printing end
 // cup product/// start/////////////////////
+import cupnew from "../assets/cup/nupnew.png"
+import cupnew0 from "../assets/cup/cupnew.jpeg"
+import cupnew1 from "../assets/cup/cupnew1.jpeg"
+import cupnew2 from "../assets/cup/cupnew2.jpeg"
+import cupnew3 from "../assets/cup/cupnew3.jpeg"
 import cupp from "../assets/cup/cup.jpeg"
 import cupp1 from "../assets/cup/cup1.jpeg"
 import cupp2 from "../assets/cup/cup2.jpeg"
@@ -192,6 +197,38 @@ const products = [
 const cupproduct = [
 
   {
+    img: cupnew3,
+    title: "Cup Customise",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
+  },
+
+  {
+    img: cupnew2,
+    title: "Cup Customise",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
+  },
+
+  {
+    img: cupnew1,
+    title: "Cup Customise",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
+  },
+  {
+    img: cupnew0,
+    title: "Cup Customise",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
+  },
+  {
+    img: cupnew,
+    title: "Cup Customise",
+    gsmColor: "text-blue-600",
+    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
+  },
+  {
     img: cupp1,
     title: "Cup cake box custom...",
     gsmColor: "text-blue-600",
@@ -233,12 +270,7 @@ const cupproduct = [
     gsmColor: "text-blue-600",
     qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
-  {
-    img: cupp2,
-    title: "Cup Customise",
-    gsmColor: "text-blue-600",
-    qty: ["1000pcs ", "5000pcs ", "50000pcs"],
-  },
+  
 ]
 // /////////////////// Premium Custom cup Printing end ///////////////////////////////
 // Rigid Drawer Packaging Box start/////////////////
