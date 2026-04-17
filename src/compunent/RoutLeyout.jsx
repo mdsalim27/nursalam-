@@ -137,8 +137,7 @@ const RoutLeyout = () => {
           <button
             onClick={handleOrder}
             className="flex items-center gap-2 px-4 py-2 
-                       bg-green-600 hover:bg-green-700 
-                       text-white text-sm rounded-lg 
+                      bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg 
                        shadow-lg transition duration-300 
                        hover:scale-105"
           >
@@ -148,8 +147,7 @@ const RoutLeyout = () => {
           {/* Scroll To Top */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="bg-blue-600 hover:bg-blue-700 
-                       text-white p-3 rounded-full 
+            className="bg-[#A7F0DD] hover:bg-[#6de5c5] text-black p-3 rounded-full 
                        shadow-xl transition duration-300 
                        hover:scale-110"
           >

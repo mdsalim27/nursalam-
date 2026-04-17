@@ -63,7 +63,7 @@ const Navbar = () => {
           {/* button start */}
           <button
             onClick={handleOrder}
-            className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300 invisible lg:visible"
+            className="flex items-center cursor-pointer gap-2 px-8 py-3 bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg transition duration-300 invisible lg:visible"
           >
             <FaWhatsapp className="text-lg" />
             Order Now
@@ -100,7 +100,7 @@ const Navbar = () => {
             {/* button start */}
             <button
               onClick={handleOrder}
-              className=" flex items-center cursor-pointer gap-2  px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300 "
+              className=" flex items-center cursor-pointer gap-2  px-4 py-2 bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg transition duration-300 "
             >
               <FaWhatsapp className="text-lg" />
               Order Now

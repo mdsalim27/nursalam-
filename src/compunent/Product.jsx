@@ -203,12 +203,7 @@ const cupproduct = [
     qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
   },
 
-  {
-    img: cupnew2,
-    title: "Cup Customise",
-    gsmColor: "text-blue-600",
-    qty: ["200 pcs |", "500 pcs |", "1000 pcs"],
-  },
+
 
   {
     img: cupnew1,
@@ -454,7 +449,7 @@ const Product = ({ item }) => {
                     {/* button start */}
                     <button
                       onClick={handleOrder}
-                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg transition duration-300"
                     >
                       <FaWhatsapp className="text-lg" />
                       Order Now
@@ -559,7 +554,7 @@ const Product = ({ item }) => {
                     <div className=" text-center flex justify-start">
                       <button
                         onClick={handleOrder}
-                        className="flex justify-center items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                        className="flex justify-center items-center cursor-pointer gap-2 px-4 py-2 bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg transition duration-300"
                       >
                         <FaWhatsapp className="text-lg" />
                         Order Now
@@ -706,7 +701,7 @@ const Product = ({ item }) => {
                     {/* button start */}
                     <button
                       onClick={handleOrder}
-                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg transition duration-300"
                     >
                       <FaWhatsapp className="text-lg" />
                       Order Now
@@ -812,7 +807,7 @@ const Product = ({ item }) => {
                     {/* button start */}
                     <button
                       onClick={handleOrder}
-                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm rounded-lg transition duration-300"
+                      className="flex items-center cursor-pointer gap-2 px-4 py-2 bg-[#A7F0DD] hover:bg-[#6de5c5] text-black text-sm rounded-lg transition duration-300"
                     >
                       <FaWhatsapp className="text-lg" />
                       Order Now
